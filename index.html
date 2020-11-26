@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+</head>
+
+<body>
+  <div class="head">
+    <div class="container">
+      <h1>IP Adderss Tracker</h1>
+      <form class="input-box">
+        <input type="text" id="ip-input" placeholder="Search for any IP address or domain" autocomplete="off">
+        <input type="submit" class="btn-primary" value=">" />
+      </form>
+      <p class="error"></p>
+      <div class="details-section">
+        <div class="ip-add box">
+          <h6>IP ADDRESS</h6>
+          <h4 id="ip-address"> -- </h4>
+        </div>
+        <div class="loc box">
+          <h6>LOCATION</h6>
+          <h4 id="address"> -- </h4>
+        </div>
+        <div class="timezone box">
+          <h6>TIMEZONE</h6>
+          <h4 id="timezone"> -- </h4>
+        </div>
+        <div class="isp box">
+          <h6>ISP</h6>
+          <h4 id="isp"> -- </h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <div class="lg-container"> -->
+  <div id="map">
+    <!-- </div> -->
+  </div>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- <script src="./assets/consts.js"></script> -->
+  <script src="app.js"></script>
+</body>
+
+</html>
