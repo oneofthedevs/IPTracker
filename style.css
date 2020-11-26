@@ -147,4 +147,25 @@ body {
   height: calc(100vh - 250px);
   position: absolute;
 }
+
+@media screen and (max-width: 767px) {
+  .head {
+    max-height: 400px;
+  }
+  .head h1 {
+    font-size: 1.6rem;
+  }
+  .details-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .box {
+    width: auto;
+  }
+  .box h6, .box h4 {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -128,5 +128,25 @@ body {
   position: absolute;
 }
 
+@media screen and (max-width: 767px) {
+  .head {
+    max-height: 400px;
 
+    // height: 45vh;
+  }
+  .head h1 {
+    font-size: 1.6rem;
+  }
+  
+  .details-section {
+    flex-direction: column;
+  }
+  .box {
+    width: auto;
+    
+  }
+  .box h6, .box h4 {
+    text-align: center;
+  }
+}
 // Helpers
